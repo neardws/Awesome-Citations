@@ -36,7 +36,7 @@ def analyze_bibtex_file(input_file):
     return type_counter, year_counter, publication_counter
 
 def print_table(counter, title, headers):
-    sorted_data = sorted(counter.items())
+    sorted_data = sorted(counter.items(), key=lambda x: x[1], reverse=True)
     print(f"\n{title}:")
     print(tabulate(sorted_data, headers=headers, tablefmt='grid'))
 
@@ -58,6 +58,5 @@ if __name__ == '__main__':
     # Print publications table sorted by numbers order
     publication_counter = dict(sorted(publication_counter.items(), key=lambda x: x[1], reverse=True))
     print_table(publication_counter, 'Publications', ['Publication', 'Count'])
-
 
 
