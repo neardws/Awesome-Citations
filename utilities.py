@@ -5,6 +5,19 @@ from collections import Counter
 from tabulate import tabulate
 from operator import itemgetter
 
+def remove_duplicates(input_file, output_file):
+    with open(input_file, 'r', encoding='utf-8') as bibtex_file:
+        parser = BibTexParser(common_strings=True)
+        parser.customization = convert_to_unicode
+        bib_database = bibtexparser.load(bibtex_file, parser=parser)
+
+    # Remove duplicates based on the reference name
+    bib_database.entries = {entry['ID']: entry for entry in bib_database.entries}.values()
+
+    # Write the deduplicated entries to a new BibTeX file
+    with open(output_file, 'w', encoding='utf-8') as deduplicated_bibtex_file:
+        bibtexparser.dump(bib_database, deduplicated_bibtex_file)
+
 def sort_bibtex_file(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as bibtex_file:
         parser = BibTexParser(common_strings=True)
@@ -42,10 +55,12 @@ def print_table(counter, title, headers):
 
 if __name__ == '__main__':
     input_file = 'refs.bib'
-    output_file = 'sorted_output.bib'
-    sort_bibtex_file(input_file, output_file)
-    print(f'Sorted BibTeX file saved as {output_file}')
-    type_counter, year_counter, publication_counter = analyze_bibtex_file(input_file)
+    sorted_file = 'sorted_output.bib'
+    deduplicated_file = 'deduplicated_output.bib'
+    sort_bibtex_file(input_file, sorted_file)
+    remove_duplicates(sorted_file, deduplicated_file)
+    print(f'Deduplicated BibTeX file saved as {deduplicated_file}')
+    type_counter, year_counter, publication_counter = analyze_bibtex_file(deduplicated_file)
 
     # Print reference types table
     print_table(type_counter, 'Reference Types', ['Type', 'Count'])
@@ -58,5 +73,4 @@ if __name__ == '__main__':
     # Print publications table sorted by numbers order
     publication_counter = dict(sorted(publication_counter.items(), key=lambda x: x[1], reverse=True))
     print_table(publication_counter, 'Publications', ['Publication', 'Count'])
-
 
