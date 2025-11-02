@@ -1,9 +1,18 @@
+import sys
+import os
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
 from collections import Counter
 from tabulate import tabulate
 from operator import itemgetter
+
+# Add parent directory to path
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(SCRIPT_DIR)
+sys.path.insert(0, PARENT_DIR)
+
+from scripts.complete_bibtex import complete_bibtex_file
 
 def remove_duplicates(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as bibtex_file:

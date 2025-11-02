@@ -128,4 +128,43 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Project-specific ignores
+# Output directory - generated files
+output/
 *.bib
+!examples/sample_input.bib
+!refs.bib
+
+# Cache directory
+.cache/
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+*.tex
+
+# Data files (keep structure, ignore content)
+data/failed_dois.json
+data/doi_corrections.json
+!data/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo

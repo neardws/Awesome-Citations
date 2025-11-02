@@ -1,0 +1,26 @@
+{
+  "citation_style": "ieee",
+  "custom_biblatex_style": null,
+  "title_format": "titlecase",
+  "journal_format": "both",
+  "author_format": "first_last",
+  "page_format": "double_dash",
+  "arxiv_handling": "replace_with_published",
+  "data_source_priority": ["doi_official", "dblp", "crossref"],
+  "merge_multiple_sources": true,
+  "parallel_processing": true,
+  "max_workers": 5,
+  "request_delay": 1.0,
+  "pdf_output": {
+    "enabled": true,
+    "document_title": "参考文献列表 / References",
+    "sort_by": "author",
+    "font_size": "11pt",
+    "paper_size": "a4paper"
+  },
+  "logging": {
+    "enabled": true,
+    "output_file": "changes_log.md",
+    "verbose": true
+  }
+}

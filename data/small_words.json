@@ -1,0 +1,15 @@
+{
+  "articles": ["a", "an", "the"],
+  "conjunctions": ["and", "but", "or", "nor", "for", "yet", "so"],
+  "prepositions": [
+    "at", "by", "in", "of", "on", "to", "up", "as", "it", "from", "into",
+    "onto", "with", "down", "for", "off", "out", "over", "near", "through",
+    "across", "along", "among", "around", "before", "behind", "below",
+    "beneath", "beside", "between", "beyond", "during", "inside", "outside",
+    "toward", "towards", "under", "upon", "within", "without", "via"
+  ],
+  "exceptions": {
+    "always_capitalize": ["I"],
+    "keep_lowercase_if_not_first": ["vs", "vs.", "v", "v."]
+  }
+}

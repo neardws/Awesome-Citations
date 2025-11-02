@@ -1,0 +1,62 @@
+{
+  "gb7714_config": {
+    "author_format": "last_first_chinese",
+    "title_format": "preserve",
+    "page_separator": "-",
+    "year_format": "full",
+    "volume_issue_format": "volume(issue)"
+  },
+  "major_journals": {
+    "计算机学报": {
+      "english_name": "Chinese Journal of Computers",
+      "abbreviation": "计算机学报",
+      "issn": "0254-4164",
+      "publisher": "中国计算机学会",
+      "language": "chinese"
+    },
+    "软件学报": {
+      "english_name": "Journal of Software",
+      "abbreviation": "软件学报",
+      "issn": "1000-9825",
+      "publisher": "中国科学院软件研究所",
+      "language": "chinese"
+    },
+    "计算机研究与发展": {
+      "english_name": "Journal of Computer Research and Development",
+      "abbreviation": "计算机研究与发展",
+      "issn": "1000-1239",
+      "publisher": "中国计算机学会",
+      "language": "chinese"
+    },
+    "自动化学报": {
+      "english_name": "Acta Automatica Sinica",
+      "abbreviation": "自动化学报",
+      "issn": "0254-4156",
+      "publisher": "中国自动化学会",
+      "language": "chinese"
+    },
+    "电子学报": {
+      "english_name": "Chinese Journal of Electronics",
+      "abbreviation": "电子学报",
+      "issn": "0372-2112",
+      "publisher": "中国电子学会",
+      "language": "chinese"
+    },
+    "通信学报": {
+      "english_name": "Journal on Communications",
+      "abbreviation": "通信学报",
+      "issn": "1000-436X",
+      "publisher": "中国通信学会",
+      "language": "chinese"
+    }
+  },
+  "format_rules": {
+    "author_delimiter": ", ",
+    "title_quotes": false,
+    "journal_format": "italic",
+    "volume_bold": false,
+    "issue_format": "(issue)",
+    "page_format": "start-end",
+    "doi_prefix": "DOI: "
+  }
+}

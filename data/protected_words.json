@@ -1,0 +1,25 @@
+{
+  "acronyms": [
+    "IoT", "AI", "ML", "DL", "NLP", "CV", "API", "SDK", "HTTP", "HTTPS",
+    "TCP", "IP", "UDP", "DNS", "VPN", "QoS", "GPS", "GAN", "CNN", "RNN",
+    "LSTM", "GRU", "RL", "DQN", "LoRa", "MQTT", "CoAP", "REST", "JSON",
+    "XML", "SQL", "NoSQL", "FPGA", "ASIC", "GPU", "CPU", "RAM", "ROM",
+    "SSD", "HDD", "OS", "VM", "LTE", "5G", "6G", "WiFi", "RFID", "NFC",
+    "BLE", "WSN", "MANET", "SDN", "NFV", "P2P", "QR", "AR", "VR", "MR",
+    "HCI", "UI", "UX", "HTML", "CSS", "JS", "PHP", "CMS", "ACL", "RSA",
+    "AES", "DES", "SHA", "MD5", "SSL", "TLS", "PKI", "DoS", "DDoS"
+  ],
+  "organizations": [
+    "IEEE", "ACM", "ACL", "AAAI", "ICML", "NeurIPS", "CVPR", "ICCV",
+    "ECCV", "ICLR", "KDD", "WWW", "SIGMOD", "SIGCOMM", "NSDI", "OSDI",
+    "SOSP", "ASPLOS", "ISCA", "MICRO", "HPCA", "SC", "PPoPP", "PLDI",
+    "POPL", "OOPSLA", "ICSE", "FSE", "ASE", "EMNLP", "NAACL", "COLING"
+  ],
+  "proper_nouns": [
+    "Arduino", "Raspberry Pi", "MATLAB", "TensorFlow", "PyTorch", "Keras",
+    "OpenCV", "Caffe", "Theano", "Spark", "Hadoop", "Kafka", "Redis",
+    "MongoDB", "PostgreSQL", "MySQL", "Docker", "Kubernetes", "GitHub",
+    "GitLab", "Jupyter", "Anaconda", "Ubuntu", "Linux", "Windows", "macOS",
+    "Android", "iOS", "Chrome", "Firefox", "Safari", "Alexa", "Siri"
+  ]
+}
