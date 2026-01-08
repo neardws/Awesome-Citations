@@ -20,13 +20,8 @@ from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.customization import convert_to_unicode
 from typing import Dict, Optional
-import sys
-
-# Add utils directory to path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-from utils.title_formatter import format_title, load_protected_words, load_small_words
-from utils.change_logger import ChangeLogger
+from awesome_citations.utils.title_formatter import format_title, load_protected_words, load_small_words
+from awesome_citations.utils.change_logger import ChangeLogger
 
 
 def load_journal_abbreviations(config_path: str = None) -> Dict[str, str]:

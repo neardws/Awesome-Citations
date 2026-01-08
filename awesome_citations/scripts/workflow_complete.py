@@ -21,11 +21,6 @@ Example:
 import sys
 import os
 
-# Add parent directory to path for imports
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PARENT_DIR = os.path.dirname(SCRIPT_DIR)
-sys.path.insert(0, PARENT_DIR)
-
 import argparse
 import json
 import time
@@ -36,19 +31,18 @@ from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.customization import convert_to_unicode
 from typing import Dict, Optional
 
-# Import existing modules from scripts directory
-from scripts.utilities import remove_duplicates, sort_bibtex_file
-from scripts.complete_bibtex import (
+from awesome_citations.scripts.utilities import remove_duplicates, sort_bibtex_file
+from awesome_citations.scripts.complete_bibtex import (
     extract_doi, verify_doi_exists, identify_publisher,
     fetch_complete_bibtex, merge_bibtex_entries, check_completeness
 )
-from scripts.format_bibtex import (
+from awesome_citations.scripts.format_bibtex import (
     load_config, load_journal_abbreviations, standardize_entry,
     load_protected_words, load_small_words
 )
-from scripts.generate_pdf import generate_pdf_from_bibtex, check_latex_installation
-from utils.change_logger import ChangeLogger
-from utils.arxiv_detector import is_arxiv_entry, extract_arxiv_id, find_published_version
+from awesome_citations.scripts.generate_pdf import generate_pdf_from_bibtex, check_latex_installation
+from awesome_citations.utils.change_logger import ChangeLogger
+from awesome_citations.utils.arxiv_detector import is_arxiv_entry, extract_arxiv_id, find_published_version
 
 
 def print_header(title: str):

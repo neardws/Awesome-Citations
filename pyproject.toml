@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awesome-citations"
+version = "0.1.0"
+description = "A comprehensive BibTeX bibliography management toolkit for academic research"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+    {name = "neardws"}
+]
+keywords = [
+    "bibtex", "bibliography", "citations", "academic", "research",
+    "latex", "ieee", "acm", "arxiv", "crossref"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "bibtexparser>=1.2.0",
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+    "lxml>=4.9.0",
+    "tabulate>=0.9.0",
+    "pyyaml>=6.0",
+    "habanero>=1.2.0",
+    "scholarly>=1.7.0",
+]
+
+[project.optional-dependencies]
+selenium = [
+    "selenium>=4.15.0",
+    "webdriver-manager>=4.0.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-timeout>=2.1.0",
+    "pytest-mock>=3.11.0",
+]
+all = [
+    "awesome-citations[selenium,dev]",
+]
+
+[project.urls]
+Homepage = "https://github.com/neardws/Awesome-Citations"
+Repository = "https://github.com/neardws/Awesome-Citations"
+Issues = "https://github.com/neardws/Awesome-Citations/issues"
+
+[project.scripts]
+awesome-citations = "awesome_citations.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["awesome_citations*"]
+
+[tool.setuptools.package-data]
+awesome_citations = [
+    "data/*.json",
+    "templates/*.tex",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"

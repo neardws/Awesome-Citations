@@ -24,12 +24,7 @@ from bibtexparser.customization import convert_to_unicode
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Optional
 
-# Import existing completion functions
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PARENT_DIR = os.path.dirname(SCRIPT_DIR)
-sys.path.insert(0, PARENT_DIR)
-
-from scripts.complete_bibtex import (
+from awesome_citations.scripts.complete_bibtex import (
     fetch_bibtex_from_ieee,
     fetch_bibtex_from_acm,
     fetch_bibtex_from_arxiv,
@@ -38,13 +33,11 @@ from scripts.complete_bibtex import (
     identify_publisher,
     merge_bibtex_entries
 )
-
-# Import new utility modules
-from utils.arxiv_detector import find_published_version, is_arxiv_entry
-from utils.multi_source_merger import merge_entries, calculate_completeness_score
-from utils.change_logger import ChangeLogger
-from scripts.format_bibtex import standardize_entry, load_journal_abbreviations, load_protected_words, load_small_words
-from scripts.generate_pdf import generate_pdf_from_bibtex
+from awesome_citations.utils.arxiv_detector import find_published_version, is_arxiv_entry
+from awesome_citations.utils.multi_source_merger import merge_entries, calculate_completeness_score
+from awesome_citations.utils.change_logger import ChangeLogger
+from awesome_citations.scripts.format_bibtex import standardize_entry, load_journal_abbreviations, load_protected_words, load_small_words
+from awesome_citations.scripts.generate_pdf import generate_pdf_from_bibtex
 
 
 def load_config(config_path: str = 'config.json') -> Dict:
