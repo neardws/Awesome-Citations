@@ -54,11 +54,23 @@ def cmd_complete(args):
 
 def cmd_format(args):
     """Format BibTeX entries."""
-    from awesome_citations.scripts.format_bibtex import main as format_main
+    from awesome_citations.scripts.format_bibtex import format_bibtex_file
     
     config = args.config if args.config else get_default_config_path()
-    sys.argv = ['format_bibtex', args.input, args.output, config]
-    format_main()
+    
+    # Build config overrides from command line arguments
+    config_overrides = {}
+    if getattr(args, 'journal_format', None):
+        config_overrides['journal_format'] = args.journal_format
+    if getattr(args, 'title_format', None):
+        config_overrides['title_format'] = args.title_format
+    if getattr(args, 'author_format', None):
+        config_overrides['author_format'] = args.author_format
+    if getattr(args, 'page_format', None):
+        config_overrides['page_format'] = args.page_format
+    
+    format_bibtex_file(args.input, args.output, config, 
+                       config_overrides if config_overrides else None)
 
 
 def cmd_sort(args):
@@ -148,6 +160,18 @@ Examples:
     p_format.add_argument('input', help='Input BibTeX file')
     p_format.add_argument('output', help='Output BibTeX file')
     p_format.add_argument('--config', '-c', help='Configuration JSON file')
+    p_format.add_argument('--journal-format', '-j',
+                         choices=['abbreviation', 'full', 'both'],
+                         help='Journal/conference name format: abbreviation, full, or both (keep as-is)')
+    p_format.add_argument('--title-format', '-t',
+                         choices=['titlecase', 'sentence', 'preserve'],
+                         help='Title format: titlecase, sentence, or preserve')
+    p_format.add_argument('--author-format', '-a',
+                         choices=['first_last', 'last_first'],
+                         help='Author name format: first_last or last_first')
+    p_format.add_argument('--page-format', '-p',
+                         choices=['double_dash', 'single_dash'],
+                         help='Page number format: double_dash (1--10) or single_dash (1-10)')
     p_format.set_defaults(func=cmd_format)
     
     # sort command

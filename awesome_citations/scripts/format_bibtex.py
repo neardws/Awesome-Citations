@@ -291,7 +291,8 @@ def standardize_entry(entry: Dict, config: Dict, journal_abbr: Dict[str, str],
     return entry
 
 
-def format_bibtex_file(input_file: str, output_file: str, config_path: str = 'config.json'):
+def format_bibtex_file(input_file: str, output_file: str, config_path: str = 'config.json',
+                       config_overrides: dict = None):
     """
     Format and standardize all entries in a BibTeX file.
 
@@ -299,6 +300,7 @@ def format_bibtex_file(input_file: str, output_file: str, config_path: str = 'co
         input_file: Path to input BibTeX file
         output_file: Path to output BibTeX file
         config_path: Path to configuration file
+        config_overrides: Dictionary of config values to override (e.g., {'journal_format': 'abbreviation'})
     """
     print(f"\n{'=' * 60}")
     print("BibTeX Field Standardization and Formatting")
@@ -306,6 +308,10 @@ def format_bibtex_file(input_file: str, output_file: str, config_path: str = 'co
 
     # Load configuration
     config = load_config(config_path)
+    
+    # Apply overrides if provided
+    if config_overrides:
+        config.update(config_overrides)
     journal_abbr = load_journal_abbreviations()
     protected_words = load_protected_words()
     small_words = load_small_words()

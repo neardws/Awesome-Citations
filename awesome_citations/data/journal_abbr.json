@@ -56,5 +56,93 @@
   "Acta Automatica Sinica": "Acta Autom. Sin.",
   "Chinese Journal of Electronics": "Chin. J. Electron.",
   "Journal of Communications": "J. Commun.",
-  "Science China Information Sciences": "Sci. China Inf. Sci."
+  "Science China Information Sciences": "Sci. China Inf. Sci.",
+
+  "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "Proceedings of the IEEE/CVF International Conference on Computer Vision": "Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV)",
+  "Proceedings of the European Conference on Computer Vision": "Proc. Eur. Conf. Comput. Vis. (ECCV)",
+  "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision": "Proc. IEEE/CVF Winter Conf. Appl. Comput. Vis. (WACV)",
+  "Proceedings of the British Machine Vision Conference": "Proc. Br. Mach. Vis. Conf. (BMVC)",
+
+  "Proceedings of the International Conference on Machine Learning": "Proc. Int. Conf. Mach. Learn. (ICML)",
+  "Proceedings of the Conference on Neural Information Processing Systems": "Proc. Conf. Neural Inf. Process. Syst. (NeurIPS)",
+  "Proceedings of the Annual Conference on Neural Information Processing Systems": "Proc. Annu. Conf. Neural Inf. Process. Syst. (NeurIPS)",
+  "Proceedings of the International Conference on Learning Representations": "Proc. Int. Conf. Learn. Represent. (ICLR)",
+  "Proceedings of the AAAI Conference on Artificial Intelligence": "Proc. AAAI Conf. Artif. Intell. (AAAI)",
+  "Proceedings of the International Joint Conference on Artificial Intelligence": "Proc. Int. Jt. Conf. Artif. Intell. (IJCAI)",
+  "Proceedings of the International Conference on Artificial Intelligence and Statistics": "Proc. Int. Conf. Artif. Intell. Stat. (AISTATS)",
+  "Proceedings of the Conference on Uncertainty in Artificial Intelligence": "Proc. Conf. Uncertain. Artif. Intell. (UAI)",
+
+  "Proceedings of the Annual Meeting of the Association for Computational Linguistics": "Proc. Annu. Meet. Assoc. Comput. Linguist. (ACL)",
+  "Proceedings of the Conference on Empirical Methods in Natural Language Processing": "Proc. Conf. Empir. Methods Nat. Lang. Process. (EMNLP)",
+  "Proceedings of the Conference of the North American Chapter of the Association for Computational Linguistics": "Proc. Conf. North Am. Chapter Assoc. Comput. Linguist. (NAACL)",
+  "Proceedings of the International Conference on Computational Linguistics": "Proc. Int. Conf. Comput. Linguist. (COLING)",
+  "Proceedings of the Conference of the European Chapter of the Association for Computational Linguistics": "Proc. Conf. Eur. Chapter Assoc. Comput. Linguist. (EACL)",
+
+  "Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining": "Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min. (KDD)",
+  "Proceedings of the ACM International Conference on World Wide Web": "Proc. ACM Int. Conf. World Wide Web (WWW)",
+  "Proceedings of the ACM International Conference on Web Search and Data Mining": "Proc. ACM Int. Conf. Web Search Data Min. (WSDM)",
+  "Proceedings of the IEEE International Conference on Data Mining": "Proc. IEEE Int. Conf. Data Min. (ICDM)",
+  "Proceedings of the SIAM International Conference on Data Mining": "Proc. SIAM Int. Conf. Data Min. (SDM)",
+  "Proceedings of the ACM International Conference on Information and Knowledge Management": "Proc. ACM Int. Conf. Inf. Knowl. Manag. (CIKM)",
+
+  "Proceedings of the ACM SIGMOD International Conference on Management of Data": "Proc. ACM SIGMOD Int. Conf. Manag. Data (SIGMOD)",
+  "Proceedings of the International Conference on Very Large Data Bases": "Proc. Int. Conf. Very Large Data Bases (VLDB)",
+  "Proceedings of the IEEE International Conference on Data Engineering": "Proc. IEEE Int. Conf. Data Eng. (ICDE)",
+
+  "Proceedings of the USENIX Symposium on Networked Systems Design and Implementation": "Proc. USENIX Symp. Networked Syst. Des. Implement. (NSDI)",
+  "Proceedings of the USENIX Symposium on Operating Systems Design and Implementation": "Proc. USENIX Symp. Oper. Syst. Des. Implement. (OSDI)",
+  "Proceedings of the ACM Symposium on Operating Systems Principles": "Proc. ACM Symp. Oper. Syst. Princ. (SOSP)",
+  "Proceedings of the ACM SIGCOMM Conference": "Proc. ACM SIGCOMM Conf. (SIGCOMM)",
+  "Proceedings of the ACM International Conference on Architectural Support for Programming Languages and Operating Systems": "Proc. ACM Int. Conf. Archit. Support Program. Lang. Oper. Syst. (ASPLOS)",
+  "Proceedings of the International Symposium on Computer Architecture": "Proc. Int. Symp. Comput. Archit. (ISCA)",
+  "Proceedings of the IEEE/ACM International Symposium on Microarchitecture": "Proc. IEEE/ACM Int. Symp. Microarchit. (MICRO)",
+  "Proceedings of the IEEE International Symposium on High Performance Computer Architecture": "Proc. IEEE Int. Symp. High Perform. Comput. Archit. (HPCA)",
+  "Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming": "Proc. ACM SIGPLAN Symp. Princ. Pract. Parallel Program. (PPoPP)",
+  "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis": "Proc. Int. Conf. High Perform. Comput. Netw. Storage Anal. (SC)",
+  "Proceedings of the USENIX Annual Technical Conference": "Proc. USENIX Annu. Tech. Conf. (USENIX ATC)",
+  "Proceedings of the European Conference on Computer Systems": "Proc. Eur. Conf. Comput. Syst. (EuroSys)",
+
+  "Proceedings of the IEEE/ACM International Conference on Software Engineering": "Proc. IEEE/ACM Int. Conf. Softw. Eng. (ICSE)",
+  "Proceedings of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering": "Proc. ACM Jt. Eur. Softw. Eng. Conf. Symp. Found. Softw. Eng. (ESEC/FSE)",
+  "Proceedings of the IEEE/ACM International Conference on Automated Software Engineering": "Proc. IEEE/ACM Int. Conf. Autom. Softw. Eng. (ASE)",
+  "Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation": "Proc. ACM SIGPLAN Conf. Program. Lang. Des. Implement. (PLDI)",
+  "Proceedings of the ACM SIGPLAN Symposium on Principles of Programming Languages": "Proc. ACM SIGPLAN Symp. Princ. Program. Lang. (POPL)",
+  "Proceedings of the ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications": "Proc. ACM SIGPLAN Int. Conf. Object-Oriented Program. Syst. Lang. Appl. (OOPSLA)",
+  "Proceedings of the International Symposium on Software Testing and Analysis": "Proc. Int. Symp. Softw. Test. Anal. (ISSTA)",
+
+  "Proceedings of the ACM Conference on Human Factors in Computing Systems": "Proc. ACM Conf. Hum. Factors Comput. Syst. (CHI)",
+  "Proceedings of the ACM Symposium on User Interface Software and Technology": "Proc. ACM Symp. User Interface Softw. Technol. (UIST)",
+  "Proceedings of the ACM Conference on Computer-Supported Cooperative Work and Social Computing": "Proc. ACM Conf. Comput.-Support. Coop. Work Soc. Comput. (CSCW)",
+  "Proceedings of the ACM International Conference on Ubiquitous Computing": "Proc. ACM Int. Conf. Ubiquittic Comput. (UbiComp)",
+
+  "Proceedings of the IEEE International Conference on Computer Communications": "Proc. IEEE Int. Conf. Comput. Commun. (INFOCOM)",
+  "Proceedings of the ACM International Conference on Mobile Computing and Networking": "Proc. ACM Int. Conf. Mobile Comput. Netw. (MobiCom)",
+  "Proceedings of the ACM International Conference on Mobile Systems, Applications, and Services": "Proc. ACM Int. Conf. Mobile Syst. Appl. Serv. (MobiSys)",
+  "Proceedings of the ACM Conference on Embedded Networked Sensor Systems": "Proc. ACM Conf. Embed. Networked Sens. Syst. (SenSys)",
+  "Proceedings of the IEEE International Conference on Network Protocols": "Proc. IEEE Int. Conf. Netw. Protoc. (ICNP)",
+  "Proceedings of the ACM Internet Measurement Conference": "Proc. ACM Internet Meas. Conf. (IMC)",
+
+  "Proceedings of the IEEE Symposium on Security and Privacy": "Proc. IEEE Symp. Secur. Priv. (S&P)",
+  "Proceedings of the ACM Conference on Computer and Communications Security": "Proc. ACM Conf. Comput. Commun. Secur. (CCS)",
+  "Proceedings of the USENIX Security Symposium": "Proc. USENIX Secur. Symp. (USENIX Security)",
+  "Proceedings of the Network and Distributed System Security Symposium": "Proc. Netw. Distrib. Syst. Secur. Symp. (NDSS)",
+
+  "Proceedings of the Robotics: Science and Systems Conference": "Proc. Robot. Sci. Syst. Conf. (RSS)",
+  "Proceedings of the IEEE International Conference on Robotics and Automation": "Proc. IEEE Int. Conf. Robot. Autom. (ICRA)",
+  "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems": "Proc. IEEE/RSJ Int. Conf. Intell. Robot. Syst. (IROS)",
+  "Proceedings of the Conference on Robot Learning": "Proc. Conf. Robot Learn. (CoRL)",
+
+  "Proceedings of the Annual International ACM SIGIR Conference on Research and Development in Information Retrieval": "Proc. Annu. Int. ACM SIGIR Conf. Res. Dev. Inf. Retr. (SIGIR)",
+  "Proceedings of the ACM Conference on Recommender Systems": "Proc. ACM Conf. Recomm. Syst. (RecSys)",
+
+  "Proceedings of the International Conference on 3D Vision": "Proc. Int. Conf. 3D Vis. (3DV)",
+  "Proceedings of the ACM SIGGRAPH Conference": "Proc. ACM SIGGRAPH Conf. (SIGGRAPH)",
+  "Proceedings of the ACM SIGGRAPH Asia Conference": "Proc. ACM SIGGRAPH Asia Conf. (SIGGRAPH Asia)",
+
+  "Proceedings of the International Conference on Acoustics, Speech and Signal Processing": "Proc. Int. Conf. Acoust. Speech Signal Process. (ICASSP)",
+  "Proceedings of the Annual Conference of the International Speech Communication Association": "Proc. Annu. Conf. Int. Speech Commun. Assoc. (INTERSPEECH)",
+
+  "Proceedings of the ACM Multimedia Conference": "Proc. ACM Multimed. Conf. (ACM MM)",
+  "Proceedings of the IEEE International Conference on Multimedia and Expo": "Proc. IEEE Int. Conf. Multimed. Expo (ICME)"
 }
