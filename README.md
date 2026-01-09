@@ -48,7 +48,10 @@ Perfect for managing bibliographies for academic papers, theses, and research pr
 - **✨ Comprehensive Field Standardization**
   - **Title formatting**: Title Case, Sentence case, with protected acronyms (IoT, WiFi, etc.)
   - **Author formatting**: First-last or Last-first name ordering
-  - **Journal normalization**: Full names, abbreviations, or preserve both (50+ journal mappings)
+  - **Journal/Conference normalization**: Full names, abbreviations, or preserve both
+    - 131 mappings: 57 journals + 74 conferences
+    - Conferences use standardized "Proceedings of xxx" format
+    - Covers: CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, AAAI, ACL, EMNLP, KDD, SIGMOD, ICSE, CHI, INFOCOM, and more
   - **Page formatting**: LaTeX double-dash (100--110) or single-dash (100-110)
 
 - **📊 PDF Bibliography Generation**
@@ -274,8 +277,25 @@ Standardize field formatting across all entries according to your preferences.
 
 **Usage:**
 ```bash
+# Using the installed package
+awesome-citations format input.bib output.bib
+
+# With format options
+awesome-citations format input.bib output.bib --journal-format abbreviation --title-format titlecase
+
+# Or using the script directly
 uv run python scripts/format_bibtex.py input.bib output.bib config.json
 ```
+
+**Command-line options:**
+
+| Option | Short | Values | Description |
+|--------|-------|--------|-------------|
+| `--journal-format` | `-j` | `abbreviation`, `full`, `both` | Journal/conference name format |
+| `--title-format` | `-t` | `titlecase`, `sentence`, `preserve` | Title formatting style |
+| `--author-format` | `-a` | `first_last`, `last_first` | Author name ordering |
+| `--page-format` | `-p` | `double_dash`, `single_dash` | Page number dash style |
+| `--config` | `-c` | path | Configuration JSON file |
 
 **Formatting options:**
 
@@ -288,10 +308,11 @@ uv run python scripts/format_bibtex.py input.bib output.bib config.json
   - `first_last`: "John Smith and Jane Doe"
   - `last_first`: "Smith, John and Doe, Jane"
 
-- **Journal formatting:**
-  - `abbreviation`: "IEEE Trans. Pattern Anal. Mach. Intell."
-  - `full`: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+- **Journal/Conference formatting:**
+  - `abbreviation`: "IEEE Trans. Pattern Anal. Mach. Intell." or "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)"
+  - `full`: "IEEE Transactions on Pattern Analysis and Machine Intelligence" or "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition"
   - `both`: Keep original format
+  - **131 mappings included**: 57 journals + 74 conferences (CVPR, ICCV, NeurIPS, ICML, ACL, KDD, SIGMOD, etc.)
 
 - **Page formatting:**
   - `double_dash`: "100--110" (LaTeX format)
@@ -738,7 +759,7 @@ Awesome-Citations/
 │   └── multi_source_merger.py # Multi-source data merging
 │
 ├── data/                       # Data files and databases
-│   ├── journal_abbr.json      # Journal abbreviation mappings (50+)
+│   ├── journal_abbr.json      # Journal/conference name mappings (131 entries)
 │   ├── protected_words.json   # Acronyms to protect in titles
 │   ├── small_words.json       # Articles/prepositions for Title Case
 │   ├── chinese_journals.json  # Chinese journal metadata
